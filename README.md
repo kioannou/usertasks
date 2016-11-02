@@ -2,7 +2,7 @@
 An angular spa
 
 ##Setup
-1) `npm install`
+1) `npm install` && `bower install`
 
 2) `npm run build`
     
@@ -10,6 +10,6 @@ An angular spa
 
 Any change will be available via livereload
 
-1) `npm install`
+1) `npm install` && `bower install`
 
 2) `npm run debug`
