@@ -1,0 +1,23 @@
+{
+  "data": {
+    "type": "task",
+    "attributes": {
+      "title": "Health",
+      "role": "COACH"
+    },
+    "relationships": {
+      "member": {
+        "data": {
+          "id": "2",
+          "type": "user"
+        }
+      },
+      "category": {
+        "data": {
+          "id": "200",
+          "type": "category"
+        }
+      }
+    }
+  }
+}

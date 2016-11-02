@@ -1,0 +1,41 @@
+
+<div class="row users-header">
+    <div class="col-sm-6 users-header-search">
+        <!--Searching for an element-->
+        <input type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
+    </div>
+    <div class="col-sm-6 users-header-sorting">
+        <!--Sorting the list-->
+        <label for="sort-select">Sort by: </label>
+        <select name="sort-select" id="sort-select" ng-model="sortingAttribute">
+            <option value="attributes.first_name">By first name</option>
+            <option value="attributes.last_name">By last name</option>
+        </select>
+    </div>
+</div>
+
+<!--Table showing the users-->
+<table class="table table-condensed table-hover">
+
+    <!--Header row-->
+    <tr class="top-row">
+        <td>#</td>
+        <td>First name</td>
+        <td>Last name</td>
+        <td>Type</td>
+        <td>Email</td>
+    </tr>
+
+    <!--Populating the table-->
+    <tr ng-repeat="user in usersArray | orderBy: sortingAttribute | filter: searchText"
+        ng-click="showUserDetails(user.id)">
+        <td>{{$index+1}}</td>
+        <td>{{user.attributes.first_name}}</td>
+        <td>{{user.attributes.last_name}}</td>
+        <td>{{user.attributes.user_type}}</td>
+        <td>{{user.attributes.email}}</td>
+    </tr>
+
+</table>
+
+</div>

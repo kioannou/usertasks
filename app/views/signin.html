@@ -1,0 +1,20 @@
+<div class="signin-panel-container">
+    <div class="panel panel-default signin-panel">
+        <div class="panel-body">
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" ng-model="loginParameters.email">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" ng-model="loginParameters.password">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me" ng-model="loginParameters.autologin"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()">Sign in</button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,85 @@
+/*Signin page*/
+.signin-panel-container {
+    margin: 10% auto;
+    max-width: 800px;
+}
+
+.form-signin {
+    padding: 10px;
+}
+
+.form-signin * {
+    margin-top: 15px;
+}
+
+/*Users page*/
+.users-header {
+    padding: 5px;
+}
+
+.users-header-search {
+
+}
+
+.users-header-sorting {
+    padding: 7px;
+}
+
+.main-container {
+    margin-top: 60px;
+}
+
+.top-row {
+    font-weight: 600;
+}
+
+/*Modal displaying selected user's details*/
+.user-details-modal div {
+    padding: 5px;
+}
+
+.details-modal-buttons {
+    margin: 5px;
+}
+
+.add-task-button {
+    float: right;
+    margin-top: -23px
+}
+
+.task-element {
+}
+
+/*Tasks page*/
+.tasks-table-header {
+    font-weight: 600;
+    color: gray;
+}
+
+/*Modal displaying selected task's details*/
+.task-details-modal div {
+    padding: 5px;
+}
+
+/*User modal*/
+.ngdialog-content {
+    width: 700px !important;
+}
+
+/*profile page*/
+.profile-container{
+
+}
+
+.profile-header{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.profile-information .panel-body div{
+    padding: 5px 0;
+}
+
+.profile-tasks{
+
+}

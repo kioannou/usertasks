@@ -1,0 +1,46 @@
+<!--Panel containing the tasks-->
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tasks</h3>
+        <button class="btn btn-primary btn-sm add-task-button" ng-click="addTask()">
+            Add new
+        </button>
+    </div>
+
+
+    <table class="table table-striped">
+
+        <!--Tasks table header-->
+        <tr class="tasks-table-header">
+            <td>Title</td>
+            <td>Created at</td>
+            <td>State</td>
+            <td>Status</td>
+        </tr>
+
+        <tr ng-repeat="task in tasksArray" class="task-element">
+
+            <!--Task's name-->
+            <td><strong>{{task.attributes.title}}</strong></td>
+
+            <!--Creation date-->
+            <td>{{task.attributes.created * 1000 | date:'dd/M/yyyy - H:mm' : 'UTC'}}</td>
+
+            <!--Current state-->
+            <td>{{task.attributes.state}}</td>
+
+            <!--Current state-->
+            <td>{{task.attributes.status}}</td>
+
+            <!--Buttons-->
+            <td>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-sm btn-primary" ng-click="editTask(task.id)">Edit</button>
+                    <button type="button" class="btn btn-sm btn-danger" ng-click="removeTask(task.id)">Remove</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

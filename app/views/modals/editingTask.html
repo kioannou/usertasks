@@ -1,0 +1,36 @@
+<div class="task-details-modal">
+    <form>
+        <div class="form-group">
+            <label for="task-role-input">Role</label>
+            <input type="text" class="form-control" id="task-role-input" placeholder="Role" ng-model="editingTask.attributes.role">
+        </div>
+        <div class="form-group">
+            <label for="task-title-input">Title</label>
+            <input type="text" class="form-control" id="task-title-input" placeholder="Title" ng-model="editingTask.attributes.title">
+        </div>
+        <div class="form-group">
+            <label for="task-id-input">Type</label>
+            <input type="text" class="form-control" id="task-id-input" placeholder="ID" ng-model="editingTask.type">
+        </div>
+    </form>
+
+    <!--Task's status-->
+    <label for="task-status-input"> Status: {{asksArray[selectedTaskIndex].attributes.status}} </label>
+    <select name="task-status-input" id="task-status-input" ng-model="editingTask.attributes.status">
+        <option value="ENABLED">ENABLED</option>
+        <option value="DISABLED">DISABLED</option>
+    </select>
+
+    <!--Buttons-->
+    <div class="row details-modal-buttons">
+        <!--Close button-->
+        <div class="col col-sm-6">
+            <button class="btn btn-danger btn-block" ng-click="closeThisDialog()">Close</button>
+        </div>
+        <!--Edit tasks button-->
+        <div class="col col-sm-6">
+            <button class="btn btn-primary btn-block" ng-click="confirm()">SAVE</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "type": "task",
+      "id": "10",
+      "meta": {},
+      "attributes": {
+        "role": "COACH",
+        "created": 1473838364,
+        "updated": 1474199410,
+        "title": "Benefits",
+        "status": "ENABLED",
+        "state": "CREATED",
+        "type": null
+      },
+      "relationships": {
+        "member": {
+          "links": {
+            "self": "https://localhost/dashboard/task/10/relationships/member",
+            "related": "https://localhost/dashboard/task/10/member"
+          },
+          "data": {
+            "type": "user",
+            "id": "1"
+          }
+        },
+        "category": {
+          "links": {
+            "self": "https://localhost/dashboard/task/10/relationships/category",
+            "related": "https://localhost/dashboard/task/10/category"
+          },
+          "data": {
+            "type": "category",
+            "id": "100"
+          }
+        }
+      },
+      "links": {
+        "self": "https://localhost/dashboard/task/10"
+      }
+    },
+    {
+      "type": "task",
+      "id": "20",
+      "meta": {},
+      "attributes": {
+        "role": "COACH",
+        "created": 1474101499,
+        "updated": null,
+        "title": "Insurance",
+        "status": "ENABLED",
+        "state": "DONE",
+        "type": null
+      },
+      "relationships": {
+        "member": {
+          "links": {
+            "self": "https://localhost/dashboard/task/20/relationships/member",
+            "related": "https://localhost/dashboard/task/20/member"
+          },
+          "data": {
+            "type": "user",
+            "id": "2"
+          }
+        },
+        "category": {
+          "links": {
+            "self": "https://localhost/dashboard/task/20/relationships/category",
+            "related": "https://localhost/dashboard/task/20/category"
+          },
+          "data": {
+            "type": "category",
+            "id": "200"
+          }
+        }
+      },
+      "links": {
+        "self": "https://localhost/dashboard/task/20"
+      }
+    }
+  ]
+}

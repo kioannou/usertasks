@@ -1,0 +1,63 @@
+<div class="profile-container">
+    <!--Name-->
+    <div class="profile-header">
+        <h3>{{selectedUser.attributes.first_name}} {{selectedUser.attributes.last_name}}</h3>
+    </div>
+
+    <div class="panel panel-default profile-information">
+        <div class="panel-heading">Profile</div>
+        <div class="panel-body">
+            <!--age-->
+            <div>
+                Age: <strong>{{selectedUser.attributes.age}}</strong>
+            </div>
+            <!--User type-->
+            <div>
+                Type: <strong>{{selectedUser.attributes.user_type}}</strong>
+            </div>
+            <!--email-->
+            <div>
+                email: <strong>{{selectedUser.attributes.email}}</strong>
+            </div>
+            <!--birth date-->
+            <div>
+                Birth date: <strong>{{selectedUser.attributes.birth_date}}</strong>
+            </div>
+            <!--about-->
+            <div>
+                About: {{selectedUser.attributes.about_me}}
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default profile-tasks">
+        <div class="panel-heading">Tasks</div>
+        <div class="panel-body">
+            <table class="table table-striped">
+
+                <!--Tasks table header-->
+                <tr class="tasks-table-header">
+                    <td>Title</td>
+                    <td>Created at</td>
+                    <td>State</td>
+                    <td>Status</td>
+                </tr>
+
+                <tr ng-repeat="task in selectedUserTasks" class="task-element">
+                    <!--Task's name-->
+                    <td><strong>{{task.attributes.title}}</strong></td>
+
+                    <!--Creation date-->
+                    <td>{{task.attributes.created * 1000 | date:'dd/M/yyyy - H:mm' : 'UTC'}}</td>
+
+                    <!--Current state-->
+                    <td>{{task.attributes.state}}</td>
+
+                    <!--Current state-->
+                    <td>{{task.attributes.status}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>

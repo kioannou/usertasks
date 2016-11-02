@@ -1,0 +1,51 @@
+{
+  "links": {
+    "self": "https://localhost/dashboard/member/"
+  },
+  "data": [
+    {
+      "type": "member",
+      "id": "1",
+      "attributes": {
+        "created": 1477502666,
+        "updated": 1477502679,
+        "email": "email@gmail.com",
+        "first_name": "Rebesiko",
+        "last_name": "Makaruko",
+        "user_type": "PATIENT",
+        "birth_date": "1961-12-10",
+        "age": 54,
+        "phone_mobile": "4312286847",
+        "about_me": "Jeffrey is a data management / database expert with a strong research background. He has been working for many years (since 2005) as a Data Warehouse Architect / BI Specialist and has solid experience in large Enterprise Data Warehousing projects and expertise in the following areas: Data Warehouse Architecture, Dimensional Modelling, ETL Design, ETL flows Performance Optimization, BI tools. Currently, he is actively involved in the design and performance tuning of heavy data management tasks over Cloudera Hadoop on an Oracle Big Data Appliance (Oracle BDA). Through the years of working with Oracle, Nikos has gained deep experience in a vast range of Oracle database areas either as a developer, or as a DBA. Due to his database research background, as well as the many years of working experience with large Oracle Data Warehouses, he has gained significant expertise and isparticularlyinterestedinthe design, implementation and performance tuning of heavy data management tasks. He has solid software implementation skills and has programmed over the years in multiple languages.He particularly enjoys programming in Haskell, Oracle SQL & PL/SQL and C++.",
+        "condition_id": "1",
+        "avatar_link": "https://www.gravatar.com/avatar/205e460b479ab8aec07710c08d50.jpg?d=retro"
+      },
+      "relationships": {},
+      "links": {
+        "self": "https://localhost/dashboard/member/133451"
+      }
+    },
+    {
+      "type": "member",
+      "id": "2",
+      "attributes": {
+        "created": 1477502639,
+        "updated": 1477502732,
+        "email": "someMail@gmail.com",
+        "first_name": "Dowozano",
+        "last_name": "Sudegifi",
+        "user_type": "PATIENT",
+        "birth_date": "1931-08-13",
+        "age": 85,
+        "phone_mobile": "1234567890",
+        "about_me": "Jack Spa is an acknowledged expert in the areas of computer mediated collaboration and user-centric software design, with a specific emphasis on the patterns of technology deployment and group dynamics that enable successful team collaboration and organizational agility. His specialties include working at the (and on the) intersection of people and technology. Spa currently focuses on working with clients to develop Digital Transformation Strategies that takes advantage of the blossoming API Economy including Cloud Computing, Personal Data Ecosystem, Digital Identity, Software as a Service, and The Internet of Things.",
+        "condition_id": "2",
+        "avatar_link": "https://www.gravatar.com/avatar/305e460b479ab9aec07710c08d50.jpg?d=retro"
+      },
+      "relationships": {},
+      "links": {
+        "self": "https://localhost/dashboard/member/133399"
+      }
+    }
+  ]
+}

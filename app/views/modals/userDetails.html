@@ -1,0 +1,49 @@
+<div class="user-details-modal">
+    <div>
+        <!--First name-->
+        First name: <strong>{{usersArray[userDetailsIndex].attributes.first_name}}</strong>
+    </div>
+    <div>
+        <!--Last name-->
+        Last name: <strong>{{usersArray[userDetailsIndex].attributes.last_name}}</strong>
+    </div>
+    <div>
+        <!--age-->
+        Age: <strong>{{usersArray[userDetailsIndex].attributes.age}}</strong>
+    </div>
+    <div>
+        <!--User type-->
+        Type: <strong>{{usersArray[userDetailsIndex].attributes.user_type}}</strong>
+    </div>
+
+    <div>
+        <!--email-->
+        email: <strong>{{usersArray[userDetailsIndex].attributes.email}}</strong>
+    </div>
+
+    <div>
+        <!--birth date-->
+        Birth date: <strong>{{usersArray[userDetailsIndex].attributes.birth_date}}</strong>
+    </div>
+
+    <div>
+        About: {{usersArray[userDetailsIndex].attributes.about_me}}
+    </div>
+
+    <!--Buttons-->
+    <div class="row details-modal-buttons">
+        <!--Close button-->
+        <div class="col col-sm-4">
+            <button class="btn btn-danger btn-block" ng-click="closeThisDialog(0)">Close</button>
+        </div>
+        <!--Edit tasks button-->
+        <div class="col col-sm-4">
+            <button class="btn btn-primary btn-block" ng-click="confirm('tasks')">Edit tasks</button>
+        </div>
+        <!--Edit tasks button-->
+        <div class="col col-sm-4">
+            <button class="btn btn-primary btn-block" ng-click="confirm('profile')">Profile</button>
+        </div>
+    </div>
+</div>
+
