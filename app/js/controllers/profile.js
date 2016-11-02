@@ -7,18 +7,6 @@ angular.module('usertasks.profileController', [])
             selectedUserTasks:[]
         });
 
-        // Function for getting all tasks for the given user
-        var getAllTasks = function () {
-            Users.getTasks()
-                .success(function (response) {
-                    console.warn(response);
-                    $scope.tasksArray = response.data;
-                })
-                .error(function (error) {
-                    console.error("There was an error getting the tasks: ", error);
-                })
-        };
-
         // Function that initializes controller
         var init = function () {
             // Checking if the user is logged in
@@ -31,14 +19,19 @@ angular.module('usertasks.profileController', [])
                         //Assigning the selected user
                         $scope.selectedUser = JSON.parse(sessionStorage.getItem("selected_user"));
 
-                        getAllTasks();
+                        //Getting the tasks
+                        Users.getTasks()
+                            .success(function (response) {
+                                $scope.selectedUserTasks = response.data;
+                            })
+                            .error(function (error) {
+                                console.error("There was an error getting the tasks: ", error);
+                            })
 
                     } else {
                         Navigation.goToState("users");
                     }
-
                 } else {
-
                     //The user is not logged in  - navigates to sign in page
                     Navigation.goToState('signin');
                 }
@@ -47,5 +40,4 @@ angular.module('usertasks.profileController', [])
 
         //Starting controller
         init();
-
 }]);

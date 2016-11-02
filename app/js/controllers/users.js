@@ -31,8 +31,6 @@ angular.module('usertasks.usersController', [])
                         scope: $scope
                     }).then(function (value) {
 
-                        console.warn(value);
-
                         //The parameter: value should be 'tasks' or 'profile'
                         $scope.goToUserPage($scope.usersArray[$scope.userDetailsIndex], value);
 
